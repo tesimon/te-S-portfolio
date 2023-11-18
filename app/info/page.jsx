@@ -16,7 +16,7 @@ const Info = () => {
             carry with me in my coding endeavors. This unique blend of technical
             proficiency and determined work ethic empowers me to approach
             challenges systematically, dissecting complex problems into
-            actionable solutions. It's this synthesis of technical skills and
+            actionable solutions. It\'s this synthesis of technical skills and
             unwavering commitment that I leverage to deliver seamless,
             user-centric web experiences.
           </p>
@@ -42,7 +42,7 @@ const Info = () => {
           <p className="">
             Embracing web development has granted me the ability to merge
             creativity and functionality, crafting digital landscapes that
-            engage, inspire, and resonate. I've realized that through coding, I
+            engage, inspire, and resonate. I\'ve realized that through coding, I
             have the privilege to shape user experiences, influence
             interactions, and contribute to the broader digital ecosystem. This
             awareness drives me to continually refine my skills, keep pace with
