@@ -10,7 +10,7 @@ export default function ProjectCard() {
   const post = projects.find((post) => post.id === isSelected);
   return (
     <motion.div
-      className={`flex  flex-wrap justify-center items-center gap-4  `}
+      className={`flex  flex-wrap justify-center items-center gap-4 not-prose `}
     >
       {projects.map((item) => (
         <motion.div
@@ -23,18 +23,18 @@ export default function ProjectCard() {
           transition={{ duration: 0.5 }}
         >
           <motion.div
-            className="absolute inset-0 flex flex-col  justify-end items-start cursor-pointer bg-black/90 opacity-0  hover:opacity-100 duration-200 px-3 py-1 rounded-md overflow-hidden"
+            className="absolute inset-0 flex flex-col  justify-end items-start  cursor-pointer bg-black/90 opacity-0  hover:opacity-100 duration-200 px-3 sm:px-5 py-3 sm:py-5 rounded-md overflow-hidden "
             whileHover={{ scale: 1, transition: { duration: 0.4 } }}
           >
-            <h2 className="text-red-50 text-center text-[17px] sm:text-2xl">
+            <h2 className="text-red-50 text-center text-[15px] sm:text-xl">
               {item.name}
             </h2>
-            <p className="text-white"> {item.about}</p>
+            <p className="text-white my-2 text-[12px] sm:my-3"> {item.about}</p>
 
-            <span className=" flex flex-wrap  text-white">
+            <span className=" flex gap-2 flex-wrap  text-white">
               {item.techStacks.map((tech, i) => (
                 <p
-                  className="bg-slate-800 text-white px-1 self-center text-center py-1 mx-1 rounded-md flex-wrap text-[12px]"
+                  className="bg-slate-800 text-white px-2 self-center text-center py-1   rounded-md flex-wrap text-[12px]"
                   key={i}
                 >
                   {tech}
@@ -48,7 +48,7 @@ export default function ProjectCard() {
               width={500}
               height={500}
               alt=""
-              className="object-cover aspect-video  w-full rounded-md h-[300px]"
+              className="object-cover aspect-auto  w-full rounded-md"
               priority
             />
           </div>
@@ -65,11 +65,11 @@ export default function ProjectCard() {
             }}
             exit={{ opacity: 0 }}
             layoutId={isSelected}
-            className="fixed inset-x-0 inset-y-0 w-fit md:inset-x-[50%] md:right-0  overflow-auto
-            py-3 px-2 lg:px-7 rounded-md dark:bg-slate-950 bg-slate-200 border border-slate-600  scrollbar-none"
+            className="fixed inset-x-0 inset-y-0 w-fit lg:inset-x-[40%] lg:right-0  overflow-auto
+            py-3 px-5 lg:px-7 rounded-md dark:bg-slate-950 bg-slate-200 border border-slate-600  scrollbar-none"
           >
             <div
-              className="flex items-center gap-1  lg:my-4 cursor-pointer hover:scale-105 hover:underline duration-300 w-fit my-3 "
+              className="flex  gap-1  cursor-pointer hover:scale-105 hover:underline duration-300 w-fit mb-6 py-2 "
               onClick={() => setisSelected(null)}
             >
               <Image
@@ -82,38 +82,42 @@ export default function ProjectCard() {
               />
               back
             </div>
-            <div className="con  flex flex-col  gap-3  items-start h-full mx-3  justify-center  rounded-md ">
-              <div className="flex-1 flex justify-center items-center ">
+            <div className="con  flex flex-col  gap-3  items-start h-fit mx-3  justify-center  rounded-md ">
+              <div className="my-3 flex justify-start items-center  ">
                 <Image
                   src={post.image}
-                  width={500}
-                  height={500}
+                  width={600}
+                  height={600}
                   alt=""
-                  className="aspect-video object-cover rounded-md "
+                  className="aspect-auto object-cover rounded-md "
                 />
               </div>
               <div className="flex-1 flex flex-col justify-start items-start gap-1 ">
-                <motion.h3 initial={{ y: 100, opacity: 0 }} className="my-0">
-                  {post.name}
-                </motion.h3>
-                <p className=" dark:text-white my-0"> {post.description}</p>
-                <div className="m-0">
-                  <span className="m-0  gap-3 items-center text-base font-bold flex flex-wrap">
-                    Tech Stacks :
-                    {post.techStacks.map((tech, i) => (
-                      <p
-                        className="bg-slate-600 text-white px-2 py-1 w-max rounded-md flex  gap-3"
-                        key={i}
-                      >
-                        {tech}
-                      </p>
-                    ))}
+                <div className=" dark:text-slate-200 text-slate-700 my-2 ">
+                  <span className="font-bold underline underline-offset-2">
+                    About
                   </span>
-                  <div>
+                  <p>{post.description}</p>
+                </div>
+                <div className="">
+                  <div className=" gap-2 items-center text-base font-bold flex flex-wrap text-center ">
+                    <p className="text-start"> Tech Stacks :</p>
+                    <span className="flex gap-2 flex-wrap">
+                      {post.techStacks.map((tech, i) => (
+                        <p
+                          className="bg-slate-600 text-white px-2 py-1 w-max rounded-md flex  gap-3"
+                          key={i}
+                        >
+                          {tech}
+                        </p>
+                      ))}
+                    </span>
+                  </div>
+                  <div className="my-5 ">
                     <span>Live site : </span>
                     <Link
                       href={post.link}
-                      className="text-gray-600"
+                      className="text-gray-600 hover:text-black dark:hover:text-white hover:underline"
                       target="_blank"
                     >
                       {post.link}

@@ -32,7 +32,7 @@ const ContactInfo = () => {
           </Link>
 
           <Link
-            href={"https://discord.com/channels/@tesimon#2079"}
+            href={"https://discord.com/users/1060203256829190194"}
             target="_blank"
             className="flex justify-center items-center gap-1"
           >
@@ -45,7 +45,7 @@ const ContactInfo = () => {
             <span className="hover:text-orange-500">discord</span>
           </Link>
           <Link
-            href={"https://discord.com/channels/@tesimon#2079"}
+            href={"https://www.instagram.com/tesimon_35/"}
             target="_blank"
             className="flex justify-center items-center gap-1"
           >

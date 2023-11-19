@@ -7,7 +7,7 @@ const Home = () => {
       <div className="">
         <h2 className=" mt-0">Hi there 👋</h2>
         <div className="flex gap-3 flex-col sm:flex-row  items-center">
-          <p className="leading-8 self-start font-bold">
+          <p className="leading-10 self-start font-bold my-2 ">
             {`I'm Simon , a Frontend Web Developer Experienced in `}
             <br />
             <span className="text-white font-extrabold  bg-yellow-500 px-2 py-[7px] rounded-lg mr-1 ">
@@ -41,13 +41,14 @@ const Home = () => {
             
             As a dedicated and growth-driven frontend web developer, I embarked on my coding journey in late 2020 with a primary focus on monetary aspirations. My early experiences as a part-time mobile technician during high school exposed me to the value of hard work and determination. However, as I delved deeper into the realm of coding, an unexpected transformation occurred—I found myself captivated by the art and science of web development, leading me to a profound realization that this newfound skill could become an integral part of my life. I am excited to continue my journey and contribute to the digital landscape, where I can continue to refine my skills, embrace new challenges, and make meaningful contributions to the world's narrative.
             `}
-            {
-              <Link href="/info" className="text-orange-600 font-bold">
-                {" "}
-                About me{" "}
-              </Link>
-            }
           </p>
+          <Link
+            href="/info"
+            className=" hover:bg-cyan-500 not-prose px-2 py-2 rounded-md font-bold bg-black text-white dark:bg-slate-100 dark:text-black"
+          >
+            {" "}
+            About me{" "}
+          </Link>
         </div>
 
         <div className="dark:text-cyan-100 not-prose my-5  text-[18px]flex gap-1 inline-flex items-center  ">
@@ -64,7 +65,10 @@ const Home = () => {
           </div>
         </div>
         <BlogPost />
-        <Link className="text-xs font-bold  hover:underline " href={"/blogs"}>
+        <Link
+          className=" not-prose text-base  font-bold hover:text-purple-500  hover:underline "
+          href={"/blogs"}
+        >
           Explore My Blogs
         </Link>
       </div>
