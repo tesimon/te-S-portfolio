@@ -117,7 +117,7 @@ export default function Navbar() {
           </Link>
 
           <Link
-            href={"https://discord.com/channels/@tesimon#2079"}
+            href={"https://discord.com/users/1060203256829190194"}
             target="_blank"
             className="flex justify-center items-center gap-1"
           >
@@ -129,7 +129,7 @@ export default function Navbar() {
             />
           </Link>
           <Link
-            href={"https://discord.com/channels/@tesimon#2079"}
+            href={"https://www.instagram.com/tesimon_35/"}
             target="_blank"
             className="flex justify-center items-center gap-1"
           >
