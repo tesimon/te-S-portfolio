@@ -8,7 +8,7 @@ const Home = () => {
         <h2 className=" mt-0">Hi there 👋</h2>
         <div className="flex gap-3 flex-col sm:flex-row  items-center">
           <p className="leading-8 self-start font-bold">
-            {`I\'m Simon , a Frontend Web Developer Experienced in `}
+            {`I'm Simon , a Frontend Web Developer Experienced in `}
             <br />
             <span className="text-white font-extrabold  bg-yellow-500 px-2 py-[7px] rounded-lg mr-1 ">
               JavaScript
@@ -39,7 +39,7 @@ const Home = () => {
           <p className="mt-5">
             {`
             
-            As a dedicated and growth-driven frontend web developer, I embarked on my coding journey in late 2020 with a primary focus on monetary aspirations. My early experiences as a part-time mobile technician during high school exposed me to the value of hard work and determination. However, as I delved deeper into the realm of coding, an unexpected transformation occurred—I found myself captivated by the art and science of web development, leading me to a profound realization that this newfound skill could become an integral part of my life\'s narrative.
+            As a dedicated and growth-driven frontend web developer, I embarked on my coding journey in late 2020 with a primary focus on monetary aspirations. My early experiences as a part-time mobile technician during high school exposed me to the value of hard work and determination. However, as I delved deeper into the realm of coding, an unexpected transformation occurred—I found myself captivated by the art and science of web development, leading me to a profound realization that this newfound skill could become an integral part of my life. I am excited to continue my journey and contribute to the digital landscape, where I can continue to refine my skills, embrace new challenges, and make meaningful contributions to the world's narrative.
             `}
             {
               <Link href="/info" className="text-orange-600 font-bold">
@@ -59,7 +59,7 @@ const Home = () => {
 
             <p className="mt-3  leading-8 tracking-[1px]">
               {`
-              Join me as I share what I\'ve learned, explore best practices, and stay updated with the latest tech trends. Let\'s make web development simple and insightful together!`}
+              Join me as I share what I've learned, explore best practices, and stay updated with the latest tech trends. Let's make web development simple and insightful together!`}
             </p>
           </div>
         </div>

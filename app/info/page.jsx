@@ -11,14 +11,14 @@ const Info = () => {
             From Technician to Technophile
           </h3>
           <p className="">
-            My initial experience as a mobile technician provided a strong
+            {`   My initial experience as a mobile technician provided a strong
             foundation of hard work and perseverance, qualities I continue to
             carry with me in my coding endeavors. This unique blend of technical
             proficiency and determined work ethic empowers me to approach
             challenges systematically, dissecting complex problems into
-            actionable solutions. It&#39;s this synthesis of technical skills
+            actionable solutions. It's this synthesis of technical skills
             and unwavering commitment that I leverage to deliver seamless,
-            user-centric web experiences.
+            user-centric web experiences.`}
           </p>
         </div>
         <div className="flex flex-col justify-start items-start gap-2 my-5">
@@ -40,14 +40,14 @@ const Info = () => {
             Crafting Digital Experiences that Resonate
           </h3>
           <p className="">
-            Embracing web development has granted me the ability to merge
+            {`Embracing web development has granted me the ability to merge
             creativity and functionality, crafting digital landscapes that
-            engage, inspire, and resonate. I&#39;ve realized that through
+            engage, inspire, and resonate. I've realized that through
             coding, I have the privilege to shape user experiences, influence
             interactions, and contribute to the broader digital ecosystem. This
             awareness drives me to continually refine my skills, keep pace with
             industry trends, and pursue novel solutions that stand at the
-            intersection of aesthetics and functionality.
+            intersection of aesthetics and functionality.`}
           </p>
         </div>
         <div className="flex flex-col justify-start items-start gap-2 my-5">
