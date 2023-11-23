@@ -3,8 +3,7 @@ import { projects } from "@/constants/projects";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
-
+import { Suspense, useState } from "react";
 export default function ProjectCard() {
   const [isSelected, setisSelected] = useState(null);
   const post = projects.find((post) => post.id === isSelected);
@@ -43,14 +42,27 @@ export default function ProjectCard() {
             </span>
           </motion.div>
           <div className="w-full">
-            <Image
-              src={item.image}
-              width={500}
-              height={500}
-              alt=""
-              className="object-cover aspect-auto  w-full rounded-md"
-              priority
-            />
+            <Suspense
+              fallback={
+                <div className="flex justify-center items-center h-screen">
+                  Loading...
+                </div>
+              }
+            >
+              {item.image && (
+                <Image
+                  src={item.image}
+                  width={500}
+                  height={500}
+                  alt="projects"
+                  placeholder="blur"
+                  blurDataURL="https://via.placeholder.com/500x300.png?text=Placeholder+Image"
+                  className="object-cover aspect-auto  w-full rounded-md"
+                
+                  
+                />
+              )}
+            </Suspense>
           </div>
         </motion.div>
       ))}
