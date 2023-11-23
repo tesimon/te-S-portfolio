@@ -8,8 +8,8 @@ module.exports = {
   darkMode: "media",
   theme: {
     extend: {
-      maxWidth: {
-        "extra-small": "250px",
+      screens: {
+        "extra-small": "400px",
       },
       fontFamily: {
         sans: ["var(--font-inter)"],

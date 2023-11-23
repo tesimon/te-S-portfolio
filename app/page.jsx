@@ -3,11 +3,11 @@ import Image from "next/image";
 import Link from "next/link";
 const Home = () => {
   return (
-    <div className=" dark:font-light text-[15px] tracking-wide leading-7  mb-5">
-      <div className="px-3 sm:px-0">
+    <div className=" dark:font-light text-[15px] tracking-wide leading-7   mb-5">
+      <div className="mr-3 ">
         <h2 className="mt-0">Hi there 👋</h2>
         <div className="flex gap-3 flex-col sm:flex-row  items-center">
-          <p className="leading-10 self-start font-bold my-2 ">
+          <p className=" max-extra-small:text-[13px] max-extra-small:leading-[30px] leading-9 self-start font-bold my-2 ">
             {`I'm Simon , a Frontend Web Developer Experienced in `}
             <br />
             <span className="text-white font-extrabold  bg-yellow-500 px-2 py-[7px] rounded-lg mr-1 ">
