@@ -10,10 +10,10 @@ const ContactInfo = () => {
         <div className="">
           <Image src={"/assets/email.png"} alt="email" width={40} height={40} />
           <Link
-            href="mailto:tesimon3536@gmail.com"
+            href="mailto:tesimontolance@gmail.com"
             className="text-zinc-500 font-serif dark:text-cyan-100 my-4 hover:text-orange-500"
           >
-            tesimon3536@gmail.com
+            tesimontolance@gmail.com
           </Link>
         </div>
         <div className="flex sm:flex-row flex-col items-start sm:justify-center  sm:items-center gap-10 ">

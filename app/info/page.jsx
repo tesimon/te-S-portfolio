@@ -37,19 +37,30 @@ const Info = () => {
         </div>
         <div className="flex flex-col justify-start items-start gap-2 my-5">
           <h3 className="text-[1rem] text-zinc-500 ">
-            Crafting Digital Experiences that Resonate
+            Interests in Building a Freelance Career
           </h3>
-          <p className="">
-            {`Embracing web development has granted me the ability to merge
-            creativity and functionality, crafting digital landscapes that
-            engage, inspire, and resonate. I've realized that through
-            coding, I have the privilege to shape user experiences, influence
-            interactions, and contribute to the broader digital ecosystem. This
-            awareness drives me to continually refine my skills, keep pace with
-            industry trends, and pursue novel solutions that stand at the
-            intersection of aesthetics and functionality.`}
+          <p className=" ">
+            Building a freelance career as a frontend web developer offers an
+            exciting platform to apply my skills and creativity. What interests
+            me most is the flexibility to work on diverse projects, collaborate
+            with different clients, and continuously expand my skill set while
+            creating tangible value. The autonomy to choose projects aligned
+            with my interests, coupled with the opportunity to work with a
+            variety of industries and professionals, motivates me to excel in
+            this dynamic and evolving field.
           </p>
         </div>
+        <div className="flex flex-col justify-start items-start gap-2 my-5">
+          <h3 className="text-[1rem] text-zinc-500 ">
+            Types of Projects I Would Like to Work On
+          </h3>
+          <p className="">
+            {`
+        I am drawn to projects that allow me to leverage my frontend development skills to create innovative and impactful solutions. I am particularly interested in working on projects involving modern web applications, responsive designs, interactive user interfaces, and implementing the latest trends and technologies in web development. Projects that challenge me to push the boundaries of what's possible in frontend development, while contributing to meaningful user experiences, are the ones that inspire me the most.
+`}
+          </p>
+        </div>
+
         <div className="flex flex-col justify-start items-start gap-2 my-5">
           <h1 className="text-[20px] dark:text-green-50">Next Steps</h1>
           <h3 className="text-[1rem] dark:text-green-100 ">

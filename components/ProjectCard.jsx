@@ -7,9 +7,6 @@ import { useState } from "react";
 export default function ProjectCard() {
   const [isSelected, setisSelected] = useState(null);
   const post = projects.find((post) => post.id === isSelected);
-  // const imageLoader = ({ src, width, quality }) => {
-  //   return `/Cube-1s-200px.svg`
-  // }
   return (
     <motion.div
       className={`flex  flex-wrap justify-center items-center gap-4 not-prose `}
@@ -45,15 +42,15 @@ export default function ProjectCard() {
             </span>
           </motion.div>
           <div className="w-full">
-                <Image
-                  src={item.image}
-                  width={500}
-                  height={500}
-                  alt="projects"
-                  placeholder="blur"
-                  blurDataURL="/Cube-1s-200px.svg"
-                  className="object-cover aspect-auto  w-full rounded-md"
-                />
+            <Image
+              src={item.images[1]}
+              width={500}
+              height={500}
+              alt="projects"
+              placeholder="blur"
+              blurDataURL="/Cube-1s-200px.svg"
+              className="object-cover aspect-video  w-full rounded-md"
+            />
           </div>
         </motion.div>
       ))}
@@ -88,7 +85,7 @@ export default function ProjectCard() {
             <div className="con  flex flex-col  gap-3  items-start h-fit mx-3  justify-center  rounded-md ">
               <div className="my-3 flex justify-start items-center  ">
                 <Image
-                  src={post.image}
+                  src={post.images[0]}
                   width={600}
                   height={600}
                   alt=""
