@@ -1,27 +1,35 @@
-## my Portfolio site Built with Next.js, React, and Tailwind
+# Simon - Frontend Web Developer
 
-**Welcome to my portfolio project built with Next.js, React, and Tailwind!  It utilizes various technologies and plugins to create a professional and visually appealing portfolio* .
+## Hi there 👋
 
-## Overview
+I'm Simon, a dedicated and growth-driven Frontend Web Developer experienced in:
 
-This portfolio project demonstrates my proficiency in the following technologies and plugins:
+- JavaScript
+- React
+- Redux
+- Next.js
+- and more...
 
-**Next.js**: Next.js is a powerful React framework for building server-side rendered and statically generated websites. It provides a seamless development experience and excellent performance.
-**React**: React is a popular JavaScript library for building user interfaces. It allows for efficient component-based development and makes it easy to create interactive web applications.
-**Tailwind CSS**: Tailwind CSS is a utility-first CSS framework that enables rapid development by providing a set of pre-defined utility classes. It offers flexibility and allows for quick customization.
-**Tailwind Typography**: Tailwind Typography is a plugin for Tailwind CSS that enhances the default typographic styles. It provides beautiful typographic defaults, making it easier to create visually appealing designs.
-**clsx**: clsx is a utility for constructing className strings in JavaScript. It simplifies the process of conditionally applying CSS classes based on different states or properties.
-**tailwind-scrollbar**: tailwind-scrollbar is a plugin for Tailwind CSS that adds custom scrollbar styles. It allows for easy customization of scrollbar appearance to match the overall design of the portfolio.
-**Framer Motion**: Framer Motion is a popular animation library for React. It provides a simple and intuitive API to create smooth animations and interactive UI components.
-**MDX**: MDX is a format that allows writing JSX in Markdown documents. It enables the creation of blog posts with React components, making it easier to integrate dynamic content into the portfolio.
-Setup Instructions
+### About Me
 
+As a passionate frontend web developer, I embarked on my coding journey in late 2020 with a primary focus on monetary aspirations. My early experiences as a part-time mobile technician during high school exposed me to the value of hard work and determination.
 
-# To set up and run the project locally, follow these steps:
+However, as I delved deeper into the realm of coding, an unexpected transformation occurred—I found myself captivated by the art and science of web development. This realization led me to understand that this newfound skill could become an integral part of my life. I am excited to continue my journey, contribute to the digital landscape, refine my skills, embrace new challenges, and make meaningful contributions to the world's narrative.
 
+### Technologies I Work With
 
-Clone the repository from GitHub: git clone <repository-url>.
-Navigate to the project directory: cd <project-directory>.
-Install the project dependencies: npm install or yarn install.
-Start the development server: npm run dev or yarn dev.
-Open your browser and visit http://localhost:3000 to view the portfolio.
+- JavaScript
+- React
+- Redux
+- Next.js
+- ...
+
+### Join Me
+
+I also keep up with the latest technologies. Join me as I share what I've learned, explore best practices, and stay updated with the latest tech trends. Let's make web development simple and insightful together!
+
+### Reach Out to Me
+
+- Email: [emailtesimontolance@gmail.com](mailto:emailtesimontolance@gmail.com)
+- LinkedIn: [T E. Simon](https://www.linkedin.com/in/t-e-simon-5163b2275/)
+- Discord: [Discord Profile](https://discord.com/users/1060203256829190194)
