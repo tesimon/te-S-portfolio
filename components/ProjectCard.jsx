@@ -9,7 +9,7 @@ export default function ProjectCard() {
   const post = projects.find((post) => post.id === isSelected);
   return (
     <motion.div
-      className={`flex  flex-wrap justify-center items-center gap-4 not-prose `}
+      className={`grid justify-center items-center md:grid-flow-rows  md:grid-cols-2   grid-flow-row   gap-4 not-prose `}
     >
       {projects.map((item) => (
         <motion.div
@@ -17,12 +17,14 @@ export default function ProjectCard() {
           layoutId={item.id}
           onClick={() => setisSelected(item.id)}
           key={item.id}
-          whileHover={{ scale: 1.01, transition: { duration: 0.4 } }}
-          whileInView={{ x: [-50, 0], opacity: [0, 1] }}
-          transition={{ duration: 0.5 }}
+          whileHover={{ scale: 1.01, transition: { duration: 0.8 } }}
+          whileInView={{
+            opacity: [0.8, 1],
+            transition: { duration: 0.9 },
+          }}
         >
           <motion.div
-            className="absolute inset-0 flex flex-col  justify-end items-start  cursor-pointer bg-black/90 opacity-0  hover:opacity-100 duration-200 px-3 sm:px-5 py-3 sm:py-5 rounded-md overflow-hidden "
+            className="absolute inset-0 flex flex-col  justify-end items-start  cursor-pointer bg-black/90 opacity-0  hover:opacity-100 duration-500 px-3 sm:px-5 py-3 sm:py-5 rounded-md overflow-hidden "
             whileHover={{ scale: 1, transition: { duration: 0.4 } }}
           >
             <h2 className="text-red-50 text-center text-[15px] sm:text-xl">
@@ -43,9 +45,9 @@ export default function ProjectCard() {
           </motion.div>
           <div className="w-full">
             <Image
-              src={item.images[1]}
-              width={500}
-              height={500}
+              src={item.images[1] || item.images[0]}
+              width={300}
+              height={300}
               alt="projects"
               placeholder="blur"
               blurDataURL="/Cube-1s-200px.svg"
@@ -65,8 +67,8 @@ export default function ProjectCard() {
             }}
             exit={{ opacity: 0 }}
             layoutId={isSelected}
-            className="fixed inset-x-0 inset-y-0 w-fit lg:inset-x-[40%] lg:right-0  overflow-auto
-            py-3 px-5 lg:px-7 rounded-md dark:bg-slate-950 bg-slate-200 border border-slate-600  scrollbar-none"
+            className="fixed  inset-x-0 inset-y-0 w-fit lg:inset-x-[40%] lg:right-0  overflow-auto
+            py-3 px-5 lg:px-7 rounded-md dark:bg-slate-950 bg-slate-200 border border-slate-600 "
           >
             <div
               className="flex  gap-1  cursor-pointer hover:scale-105 hover:underline duration-300 w-fit mb-6 py-2 "
@@ -82,7 +84,7 @@ export default function ProjectCard() {
               />
               back
             </div>
-            <div className="con  flex flex-col  gap-3  items-start h-fit mx-3  justify-center  rounded-md ">
+            <div className=" flex flex-col  gap-3  items-start h-fit mx-3  justify-center  rounded-md ">
               <div className="my-3 flex justify-start items-center  ">
                 <Image
                   src={post.images[0]}
@@ -99,7 +101,7 @@ export default function ProjectCard() {
                   </span>
                   <p>{post.description}</p>
                 </div>
-                <div className="">
+                <div>
                   <div className=" gap-2 items-center text-base font-bold flex flex-wrap text-center ">
                     <p className="text-start"> Tech Stacks :</p>
                     <span className="flex gap-2 flex-wrap">
@@ -113,7 +115,7 @@ export default function ProjectCard() {
                       ))}
                     </span>
                   </div>
-                  <div className="my-5 ">
+                  <div className="mt-3 ">
                     <span>Live site : </span>
                     <Link
                       href={post.link}
@@ -121,6 +123,17 @@ export default function ProjectCard() {
                       target="_blank"
                     >
                       {post.link}
+                    </Link>
+                  </div>
+
+                  <div className="my-3 ">
+                    <span>Source code : </span>
+                    <Link
+                      href={post.sourceCode}
+                      className="text-gray-600 hover:text-black dark:hover:text-white hover:underline"
+                      target="_blank"
+                    >
+                      {post.sourceCode}
                     </Link>
                   </div>
                 </div>

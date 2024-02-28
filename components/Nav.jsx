@@ -4,23 +4,28 @@ import { LayoutGroup, motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { useParams, usePathname } from "next/navigation";
+import { SocialIcons } from "./SocialIcons";
 
 function Logo() {
   return (
     <motion.div
-      transition={{ duration: 0.4 }}
-      whileInView={{ x: [-50, 0], opacity: [0, 1] }}
+      transition={{ duration: 0.8 }}
+      whileInView={{ opacity: [0, 1] }}
+      className="flex justify-between items-center mb-2"
     >
       <Link href={"/"}>
         <Image
           src="/assets/mylogo.svg"
           alt="logo"
-          width={100}
-          height={100}
+          width={120}
+          height={120}
           className=" -ml-5 filter brightness-0 dark:brightness-100"
           priority
         />
       </Link>
+      <div className="sm:hidden block ">
+        <SocialIcons />
+      </div>
     </motion.div>
   );
 }
@@ -54,8 +59,8 @@ export default function Navbar() {
       </div>
       <div className="pair flex flex-col sm:flex-row">
         <motion.div
-          transition={{ duration: 0.5 }}
-          whileInView={{ x: [-50, 0], opacity: [0, 1] }}
+          transition={{ duration: 0.9 }}
+          whileInView={{ opacity: [0, 1] }}
           className="menu"
         >
           <LayoutGroup id="sidebar">
@@ -68,16 +73,16 @@ export default function Navbar() {
                       key={path}
                       href={path}
                       className={clsx(
-                        "transition-transform duration-300  hover:scale-110 hover:text-orange-500 flex align-middle",
+                        "ease-linear  duration-500  hover:text-slate-950 dark:hover:text-slate-50  flex align-middle",
                         "flex justify-between gap-3 ",
                         {
-                          "text-slate-700 dark:text-white/60 ": !isActive,
-                          "font-bold text-orange-600 bg-slate-950 rounded-md px-2 py-1":
+                          "text-slate-700 dark:text-white/80 ": !isActive,
+                          "font-bold text-slate-200 bg-slate-950 hover:text-white/70 rounded-md px-2 py-1":
                             isActive,
                         }
                       )}
                     >
-                      <span className="transition_add">
+                      <span>
                         {name}
                         {path === pathname ? (
                           <motion.div
@@ -86,10 +91,8 @@ export default function Navbar() {
                             transition={{
                               type: "spring",
                               stiffness: 350,
-                              damping: 30,
+                              damping: 60,
                             }}
-                            initial={{ opacity: 0.6, scale: 0.5 }}
-                            animate={{ opacity: 1, scale: 1 }}
                           />
                         ) : null}
                       </span>
@@ -101,59 +104,8 @@ export default function Navbar() {
           </LayoutGroup>
         </motion.div>
       </div>
-      <div className="socials hidden sm:block">
-        <div className="flex sm:flex-row flex-col items-start sm:justify-center  sm:items-center gap-6 ">
-          <Link
-            href={"https://www.linkedin.com/in/t-e-simon-5163b2275/"}
-            target="_blank"
-            className="flex justify-center items-center gap-1 "
-          >
-            <Image
-              src={"/assets/linkedin-icon8.png"}
-              width={25}
-              height={25}
-              alt="linkedin"
-            />
-          </Link>
-
-          <Link
-            href={"https://discord.com/users/1060203256829190194"}
-            target="_blank"
-            className="flex justify-center items-center gap-1"
-          >
-            <Image
-              src={"/assets/discord-icon.png"}
-              width={25}
-              height={25}
-              alt="discord"
-            />
-          </Link>
-          <Link
-            href={"https://www.instagram.com/tesimon_35/"}
-            target="_blank"
-            className="flex justify-center items-center gap-1"
-          >
-            <Image
-              src={"/assets/instagram.png"}
-              width={25}
-              height={25}
-              alt="instagram"
-            />
-          </Link>
-          <Link
-            href={"https://github.com/tesimon"}
-            target="_blank"
-            className="flex justify-center items-center gap-1"
-          >
-            <Image
-              src={"/assets/animated-github.gif"}
-              width={20}
-              height={20}
-              alt="instagram"
-              className="rounded-full"
-            />
-          </Link>
-        </div>
+      <div className="sm:block hidden">
+        <SocialIcons />
       </div>
     </div>
   );

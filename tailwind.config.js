@@ -11,10 +11,6 @@ module.exports = {
       screens: {
         "extra-small": "400px",
       },
-      fontFamily: {
-        sans: ["var(--font-inter)"],
-        mono: ["var(--font-roboto-mono)"],
-      },
     },
   },
   plugins: [

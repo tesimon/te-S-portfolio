@@ -6,7 +6,7 @@ I'm Simon, a dedicated and growth-driven Frontend Web Developer experienced in:
 
 - JavaScript
 - React
-- Redux
+- D3.js
 - Next.js
 - and more...
 
@@ -14,15 +14,15 @@ I'm Simon, a dedicated and growth-driven Frontend Web Developer experienced in:
 
 As a passionate frontend web developer, I embarked on my coding journey in late 2020 with a primary focus on monetary aspirations. My early experiences as a part-time mobile technician during high school exposed me to the value of hard work and determination.
 
-However, as I delved deeper into the realm of coding, an unexpected transformation occurred—I found myself captivated by the art and science of web development. This realization led me to understand that this newfound skill could become an integral part of my life. I am excited to continue my journey, contribute to the digital landscape, refine my skills, embrace new challenges, and make meaningful contributions to the world's narrative.
+However, as I delved deeper into the realm of coding, an unexpected transformation occurred—I found myself captivated by the art and science of programming. This realization led me to understand that this newfound skill could become an integral part of my life. I am excited to continue my journey, contribute to the digital landscape, refine my skills, embrace new challenges, and make meaningful contributions to the world's narrative.
 
 ### Technologies I Work With
 
 - JavaScript
 - React
+- D3.js
 - Redux
 - Next.js
-- ...
 
 ### Join Me
 
