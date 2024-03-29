@@ -73,11 +73,12 @@ export default function Navbar() {
                       key={path}
                       href={path}
                       className={clsx(
-                        "ease-linear  duration-500  hover:text-slate-950 dark:hover:text-slate-50  flex align-middle",
+                        "ease-linear  duration-500 flex align-middle",
                         "flex justify-between gap-3 ",
                         {
-                          "text-slate-700 dark:text-white/80 ": !isActive,
-                          "font-bold text-slate-200 bg-slate-950 hover:text-white/70 rounded-md px-2 py-1":
+                          "text-slate-700 dark:text-white/70 dark:hover:text-white hover:text-black ":
+                            !isActive,
+                          "font-bold text-white dark:text-black bg-slate-950 dark:bg-slate-200 bg-origin-border dark:hover:text-black hover:text-cyan-100 rounded-md px-3 py-[3px]":
                             isActive,
                         }
                       )}

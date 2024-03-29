@@ -68,7 +68,7 @@ export default function ProjectCard() {
             exit={{ opacity: 0 }}
             layoutId={isSelected}
             className="fixed  inset-x-0 inset-y-0 w-fit lg:inset-x-[40%] lg:right-0  overflow-auto
-            py-3 px-5 lg:px-7 rounded-md dark:bg-slate-950 bg-slate-200 border border-slate-600 "
+            py-3 px-5 lg:px-7 rounded-md cart-theme_light dark:cart-theme_dark border border-slate-600 "
           >
             <div
               className="flex  gap-1  cursor-pointer hover:scale-105 hover:underline duration-300 w-fit mb-6 py-2 "

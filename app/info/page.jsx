@@ -4,9 +4,6 @@ const Info = () => {
     <>
       <div className="leading-7 tracking-wide text-[1.05rem]">
         <div className="flex flex-col justify-start items-start gap-2 my-5">
-          <h1 className="text-[20px] dark:text-cyan-50">Overview</h1>
-        </div>
-        <div className="flex flex-col justify-start items-start gap-2 my-5">
           <h3 className="text-[1rem] text-zinc-500 ">
             From Technician to Technophile
           </h3>
@@ -41,7 +38,7 @@ const Info = () => {
 
         <div className="flex flex-col justify-start items-start gap-2 my-5">
           <h3 className="text-[1rem] text-zinc-500 ">Next steps</h3>
-          <p className="">
+          <p>
             {`
         I'm eager to build upon my experiences, collaborate with fellow developers, and tackle projects that challenge me to grow.
 `}

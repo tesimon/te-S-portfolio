@@ -54,6 +54,7 @@ export let projects = [
     techStacks: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "MongoDB"],
     images: ["/E-commerce-shop.png", "/E-commerce-shop.png"],
     link: "https://e-commerceshop.vercel.app",
+    sourceCode: "https://github.com/tesimon/E-Commerce-Shop",
     id: 2,
   },
   {
@@ -64,6 +65,7 @@ export let projects = [
       "this is a full-stack blog web application that allows users to create, read, write, and comment on the posts, and so on . It provides a seamless user experience by integrating Google and github sign-in for easy authentication. The application offers a robust article editing and adding images functionality while writing users own articles based on user preferences, it also gives a blog filtering options based on catagory. this blog site  also features a system-based and user preference theme options, with a dark mode recommended for optimal user experience.",
     images: ["/blog-app.gif", "/assets/Modern-Blog.png"],
     link: "https://thoughtfulperspectives.vercel.app",
+    sourceCode: "https://github.com/tesimon/full-stack-blog-app",
     id: 1,
     techStacks: [
       "Next.js",

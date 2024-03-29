@@ -10,7 +10,7 @@
 
 @layer utilities {
   .dark-theme {
-    background: rgb(32, 43, 54);
+    background: rgb(5, 12, 20);
   }
 }
 .light-theme {
@@ -20,23 +20,28 @@
   z-index: -5;
   opacity: 100%;
 }
+@layer utilities {
+  .cart-theme_dark {
+    background: rgb(5, 12, 20);
+  }
+}
+.cart-theme_light {
+  z-index: 2;
+  background-color: #e3eeff;
+}
 
 .extra-gradient {
   background: radial-gradient(
-      circle at 35% 50%,
-      rgba(109, 171, 147, 0.16),
+      circle at 45% 50%,
+      rgba(86, 53, 231, 0.185),
       transparent 30%
     ),
     radial-gradient(
-      circle at 65% 50%,
-      rgba(180, 58, 123, 0.15),
-      transparent 25%
+      circle at 15% 100%,
+      rgba(100, 43, 233, 0.116),
+      transparent 20%
     ),
-    radial-gradient(
-      circle at 50% 65%,
-      rgba(214, 248, 186, 0.15),
-      transparent 15%
-    );
+    radial-gradient(circle at 40% 75%, rgba(233, 23, 23, 0.15), transparent 15%);
   background-attachment: fixed;
   position: fixed;
   border-radius: 40%;
@@ -48,6 +53,7 @@
   bottom: 0;
   content: "";
   z-index: -1;
+  opacity: 0.7;
 }
 ::selection {
   background-color: #47a3f3;
