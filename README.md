@@ -30,6 +30,6 @@ I also keep up with the latest technologies. Join me as I share what I've learne
 
 ### Reach Out to Me
 
-- Email: [emailtesimontolance@gmail.com](mailto:emailtesimontolance@gmail.com)
+- Email: [tesimontolance@gmail.com](mailto:emailtesimontolance@gmail.com)
 - LinkedIn: [T E. Simon](https://www.linkedin.com/in/t-e-simon-5163b2275/)
 - Discord: [Discord Profile](https://discord.com/users/1060203256829190194)
